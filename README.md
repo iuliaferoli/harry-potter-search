@@ -16,4 +16,4 @@
 
 ### [3 Mapping our Index](/3.%20Index%20Mapping)
 
-### 4 Search Queries
+### [4 Search Magic](/4.%20Search%20Magic.md)
