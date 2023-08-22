@@ -3,13 +3,18 @@
 
 This project covers serch use cases on Harry Potter text databases, with a focus on python integrations.
 
-The goal on phase one is to create a index where each document is a Harry Potter character with their attributes. This index can them be used to create customized search queries to identify subsets of characters with particular properties.
+### Phase 1  Notebooks [0](/0.%20Cleaning%20Data.ipynb) --> [4](/4.%20Search%20Magic.md)
+Create a index where each document is a Harry Potter character with their attributes. This index can them be used to create customized search queries to identify subsets of characters with particular properties.
 
 This example project covers the basic introductory concepts of elasticsearch and kibana. 
 
-#### Implemented features and planned additions
+### In Phase 2 Notebook [5](/5.%20Python%20Wrapper.ipynb)
+Introduce the python client to communicate with the Elasticsearch engine via code. Create an index from the first Harry Potter movie script to use fore more complex, natural language queries.
+
+
+### Implemented features and planned additions
 - [X] HP characters index & search
-- [ ] HP characters index - python client interface for search
+- [X] HP characters index - python client interface for search
 - [ ] HP book corpus word2vec embeddings and similairy mapping
 - [ ] HP and the Generative AI
 
@@ -41,3 +46,8 @@ Working with Console / dev tools, intro to data types in elastic.
 
 ### [4 Search Magic](/4.%20Search%20Magic.md)
 Building requests and intro to queries.
+
+## Harry Potter Movie Dialoogue Index | Intro to Elasticsearch Python Client
+
+### [5 Python Wrapper](/5.%20Python%20Wrapper.ipynb)
+Working with the python client to build an index and mapping, bulk ingest documents, and run queries.
