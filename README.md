@@ -19,6 +19,10 @@ Introduce the python client to communicate with the Elasticsearch engine via cod
 - [ ] HP and the Generative AI
 
 
+[![Watch the video](img/yb.png)](https://www.youtube.com/watch?v=avxqGSPyKOA)
+
+
+
 ## Setup Environment
 
 Requirements
