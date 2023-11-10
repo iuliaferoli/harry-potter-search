@@ -61,7 +61,7 @@ Building requests and intro to queries.
 ### [5 Python Wrapper](/5.%20Python%20Wrapper.ipynb)
 Working with the python client to build an index and mapping, bulk ingest documents, and run queries.
 
-### [7 Eland and NLP - Sentiment analysis](/7.%20Eland%20Client%20&%20%20NLP.ipynb
+### [7 Eland and NLP - Sentiment analysis](/7.%20Eland%20Client%20&%20%20NLP.ipynb)
 Importing models from huggingface using the ELand client. Running sentiment analysis on our index.
 
 ### [8 Embeddings and Vector search](/8.%20Vector%20Search.ipynb)
