@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Past queries</title>
+</head>
+<body>
+    <h1>These are the past searches ran:</h1>
+    
+    {% for result in response %}
+    <p>Your query was: {{ result._source.Query }}</p>
+    <p>Search Results:</p>
+    <ul id="answer">
+    {% for item in result._source.Response %}
+    <li> {{ item }} </li>
+    {% endfor %}
+    </ul>
+
+    {% endfor %}
+
+
+</body>
+</html>
