@@ -1,6 +1,7 @@
 from helper_functions import connect_client, semantic_search
 from flask import Flask, render_template, request
 from datetime import datetime
+import streamlit as st
 
 index = "hp_scripts_final"
 model_id = "sentence-transformers__msmarco-minilm-l-12-v3"
