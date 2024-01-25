@@ -3,10 +3,12 @@
 
 This project covers serch use cases on Harry Potter text databases, with a focus on python integrations.
 
-The goal on phase one is to create a index where each document is a Harry Potter character with their attributes. This index can them be used to create customized search queries to identify subsets of characters with particular properties.
+### Part 1: Intro to Elasticsearch [0](/0.%20Cleaning%20Data.ipynb) --> [4](/4.%20Search%20Magic.md)
+Create a index where each document is a Harry Potter character with their attributes. This index can them be used to create customized search queries to identify subsets of characters with particular properties.
 
 This example project covers the basic introductory concepts of elasticsearch and kibana. 
 
+<<<<<<< HEAD
 ### In Phase 2 Notebooks [5](/5.%20Python%20Wrapper.ipynb) --> [9](/9.%20ELSER%20Semantic%20Search.ipynb)
 Introduce the python client to communicate with the Elasticsearch engine via code. Create an index from the first Harry Potter movie script to use fore more complex, natural language queries.
 Use Hugging Face models to add Sentiment Analysis and Embeddings for Semantic Search.
@@ -16,12 +18,31 @@ Combine multiple models for hybrid search; compare to the native functionality o
 Build a simple Flask APP as a User Interface for search
 Introduce a new index to store historical searches as they are ran - we can use this for observability & tracking.
 Separate some helper_functions that we can reuse. 
+=======
+### In Part 2: Python Clients [5](/5.%20Python%20Wrapper.ipynb) --> [9](/9.%20ELSER%20Semantic%20Search.ipynb)
+Introduce the python client to communicate with the Elasticsearch engine via code. Create an index from the first Harry Potter movie script to use for more complex, natural language queries.
+Import models with the Eland python client allowing us to do sentiment analysis and embeddings.
+Use ELSER for semantic search
+Combine the different search techniques together
+
+>>>>>>> a22d447f7a6bfb331b7ae5b2d6446ce26b7cabb5
 
 ### Implemented features and planned additions
 - [X] HP characters index & search
 - [X] HP characters index - python client interface for search
+<<<<<<< HEAD
 - [ ] HP book corpus word2vec embeddings and similairy mapping
 - [ ] HP and the Generative AI
+=======
+- [X] HP sentiment analysis on movie subtitles
+- [X] Embeddings and semantic search with ELSER
+- [ ] Python-DSL client
+- [ ] Observability & Monitoring
+
+
+[![Watch the video](img/yb.png)](https://www.youtube.com/watch?v=avxqGSPyKOA)
+
+>>>>>>> a22d447f7a6bfb331b7ae5b2d6446ce26b7cabb5
 
 
 ## Setup Environment
@@ -52,11 +73,16 @@ Working with Console / dev tools, intro to data types in elastic.
 ### [4 Search Magic](/4.%20Search%20Magic.md)
 Building requests and intro to queries.
 
+<<<<<<< HEAD
 ## Harry Potter Movie Dialoogue Index | Intro to Elasticsearch Python Client
+=======
+## Harry Potter Movie Dialogue Index | Intro to Elastic Python Client
+>>>>>>> a22d447f7a6bfb331b7ae5b2d6446ce26b7cabb5
 
 ### [5 Python Wrapper](/5.%20Python%20Wrapper.ipynb)
 Working with the python client to build an index and mapping, bulk ingest documents, and run queries.
 
+<<<<<<< HEAD
 ### 6 TBD - Elasticsearch Python DSL Client
 
 ### [7 Eland & NLP](/7.%20Eland%20Client%20&%20%20NLP.ipynb)
@@ -76,3 +102,13 @@ See blog for our Advent Calendar [here](https://discuss.elastic.co/t/dec-18th-20
 ### [Flask web app](/web_app.py) using [helper_functions](/helper_functions.py) and [templates](/templates/)
 Using Flask for a simple user interface allowing users to search (for a live demo). Added historical query tracking in a new index to later use for observability. 
 ![img](/img/web_app.jpeg)
+=======
+### [7 Eland and NLP - Sentiment analysis](/7.%20Eland%20Client%20&%20%20NLP.ipynb)
+Importing models from huggingface using the ELand client. Running sentiment analysis on our index.
+
+### [8 Embeddings and Vector search](/8.%20Vector%20Search.ipynb)
+Importing an embedding model and using the vector space to run semantic search.
+
+### [9 ELSER Semantic Search](/9.%20ELSER%20Semantic%20Search.ipynb)
+Upgrading semantic search experience with ELSER and combining "classic" elastic searches with sentiment and embeddings for extra dimensions.
+>>>>>>> a22d447f7a6bfb331b7ae5b2d6446ce26b7cabb5

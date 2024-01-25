@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Semantic Search Query</title>
+</head>
+<body>
+    <h1>Your query was: {{ question }}</h1>
+    <p>Search Results:</p>
+    <ul id="answer">
+    {% for item in answer %}
+    <li> {{ item }} </li>
+    {% endfor %}
+    </ul>
+
+
+</body>
+</html>
+
+
