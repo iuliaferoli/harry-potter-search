@@ -7,9 +7,19 @@ The goal on phase one is to create a index where each document is a Harry Potter
 
 This example project covers the basic introductory concepts of elasticsearch and kibana. 
 
-#### Implemented features and planned additions
+### In Phase 2 Notebooks [5](/5.%20Python%20Wrapper.ipynb) --> [9](/9.%20ELSER%20Semantic%20Search.ipynb)
+Introduce the python client to communicate with the Elasticsearch engine via code. Create an index from the first Harry Potter movie script to use fore more complex, natural language queries.
+Use Hugging Face models to add Sentiment Analysis and Embeddings for Semantic Search.
+Combine multiple models for hybrid search; compare to the native functionality of ELSER (knn Search).
+
+### In Phase 3 Files [11](/web_app.py) 
+Build a simple Flask APP as a User Interface for search
+Introduce a new index to store historical searches as they are ran - we can use this for observability & tracking.
+Separate some helper_functions that we can reuse. 
+
+### Implemented features and planned additions
 - [X] HP characters index & search
-- [ ] HP characters index - python client interface for search
+- [X] HP characters index - python client interface for search
 - [ ] HP book corpus word2vec embeddings and similairy mapping
 - [ ] HP and the Generative AI
 
@@ -41,3 +51,28 @@ Working with Console / dev tools, intro to data types in elastic.
 
 ### [4 Search Magic](/4.%20Search%20Magic.md)
 Building requests and intro to queries.
+
+## Harry Potter Movie Dialoogue Index | Intro to Elasticsearch Python Client
+
+### [5 Python Wrapper](/5.%20Python%20Wrapper.ipynb)
+Working with the python client to build an index and mapping, bulk ingest documents, and run queries.
+
+### 6 TBD - Elasticsearch Python DSL Client
+
+### [7 Eland & NLP](/7.%20Eland%20Client%20&%20%20NLP.ipynb)
+Use the Eland client to import models from Hugging Face and run Sentiment Analysis on the data
+
+### [8 Vector Search](/8.%20Vector%20Search.ipynb)
+Create embeddings for semantic (natural language) search
+
+### [9 ELSER](/9.%20ELSER%20Semantic%20Search.ipynb)
+Compare with the ELSER model built by Elastic
+
+## [10. Christmas Special](/10.%20Christmas%20+%20Books%20Special%20edition.ipynb)
+See blog for our Advent Calendar [here](https://discuss.elastic.co/t/dec-18th-2023-en-the-most-magical-time-of-the-year-using-semantic-search-to-find-the-most-festive-harry-potter-moments/347615)
+
+## Phase 3
+
+### [Flask web app](/web_app.py) using [helper_functions](/helper_functions.py) and [templates](/templates/)
+Using Flask for a simple user interface allowing users to search (for a live demo). Added historical query tracking in a new index to later use for observability. 
+![img](/img/web_app.jpeg)
